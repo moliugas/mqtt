@@ -1,4 +1,4 @@
-FROM eclipse-mosquitto:latest
+FROM eclipse-mosquitto
 
 # Copy the configuration file into the container
 COPY config/mosquitto.conf /mosquitto/config/mosquitto.conf
