@@ -1,7 +1,7 @@
 FROM eclipse-mosquitto:latest
 
 # Copy the configuration file into the container
-COPY mosquitto.conf /mqtt/config/mosquitto.conf
+COPY /config/mosquitto.conf /mqtt/config/mosquitto.conf
 
 # Use a named volume to persist the data and log files
 VOLUME ["/mqtt/data", "/mqtt/log"]
